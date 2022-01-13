@@ -1,0 +1,377 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+h1,
+h2,
+h3 {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 18px;
+}
+h3 {
+  font-size: 12px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 21px;
+  padding: 0 30px;
+}
+
+/*The widths are in a percentage!*/
+header {
+  height: 110px;
+  border-bottom: 3px solid #77a466;
+  margin: 0 auto;
+}
+
+header h1 {
+  float: left;
+  margin: 0;
+  padding: 38px 0;
+}
+header h1 span {
+  color: #77a466;
+}
+
+header nav {
+  float: right;
+  padding: 46px 0;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 0 10px;
+  display: inline;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #77a466;
+}
+
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+  margin: 0 auto;
+  clear: both;
+}
+
+.main-image {
+  height: auto;
+  float: left;
+}
+.main-image img {
+  width: 100%;
+  border-bottom: 3px solid #77a466;
+}
+
+.main-title {
+  height: auto;
+  float: left;
+}
+.main-title h2 {
+  text-align: left;
+  padding: 5px 0;
+  color: #77a466;
+}
+.main-title p {
+  padding: 0;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.section-one,
+.section-two,
+.section-three {
+  width: 33%;
+  height: auto;
+  float: left;
+  border-top: 1px solid #eee;
+}
+
+.section-one h3 {
+  padding: 10px 0;
+}
+
+.section-two {
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+
+.section-two h3,
+.section-three h3 {
+  padding: 10px 30px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+.menu li {
+  padding: 10px 0;
+  color: #77a466;
+}
+
+.reviews {
+  color: #333;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.address {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/*The widths are in a percentage!*/
+footer {
+  height: 50px;
+  border-top: 3px solid #eee;
+  margin: 0 auto;
+  clear: both;
+  text-align: center;
+}
+footer span {
+  font-family: "Galada", cursive;
+  text-transform: lowercase;
+  color: #77a466;
+  font-size: 14px;
+}
+
+/* Smaller Phone */
+
+@media screen and (min-width: 200px) and (max-width: 376px) {
+  body {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 0 2rem 0 3rem;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #77a466;
+    padding: 2rem 2rem 12rem 2rem;
+    flex-flow: row wrap;
+    width: 1000%;
+  }
+
+  header h1 {
+    border-bottom: 0.2rem solid #77a466;
+    padding-bottom: 0.5rem;
+    margin: 0;
+    padding: 0;
+    line-height: 4rem;
+    text-align: center;
+  }
+
+  header nav {
+    padding: 0.15rem 0;
+    margin: 0.15rem 0;
+  }
+
+  header nav ul li {
+    display: flex;
+    margin: 0.5rem 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-image img {
+    width: 100%;
+    border-bottom: 3px solid #77a466;
+  }
+
+  .top-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 100%;
+  }
+
+  .section-two {
+    border-left: none;
+    border-right: none;
+  }
+
+  .section-two h3,
+  .section-three h3 {
+    padding: 0;
+  }
+
+  .bottom-section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .section-one,
+  .section-two,
+  .section-three {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex: 0 0 100%;
+    width: 100%;
+  }
+}
+
+/* Small Phones */
+
+@media screen and (min-width: 377px) and (max-width: 1200px) {
+  body {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #77a466;
+    padding: 2rem 2rem 8rem 2rem;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+  header h1 {
+    border-bottom: 0.2rem solid #77a466;
+    padding-bottom: 0.5rem;
+    margin: 0;
+    padding: 0;
+    line-height: 4rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav {
+    padding: 0.55rem 0;
+    margin: 0.15rem 0;
+  }
+
+  header nav ul li {
+    display: flex;
+    margin: 0.5rem 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-image img {
+    width: 100%;
+    border-bottom: 2px solid #77a466;
+  }
+
+  .section-two {
+    border-left: none;
+    border-right: none;
+  }
+
+  .section-two h3,
+  .section-three h3 {
+    padding: 0;
+  }
+
+  .top-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bottom-section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .section-one,
+  .section-two,
+  .section-three {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex: 0 0 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
